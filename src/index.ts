@@ -20,7 +20,7 @@ export default {
     const url = new URL(request.url);
     const name = url.searchParams.get("name") ?? "World";
 
-    return new Response(`Hello ${name}!`, {
+    return new Response(`Hello my brother named ${name}!`, {
       headers: { "content-type": "text/plain; charset=utf-8" },
     });
   },
